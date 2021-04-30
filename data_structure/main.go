@@ -9,5 +9,6 @@ func main() {
 	linkedList.Add(2)
 	linkedList.Add(3)
 	linkedList.Add(4)
+	linkedList.InsertHead(1)
 	linkedList.PrintAll()
 }

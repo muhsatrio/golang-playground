@@ -25,6 +25,19 @@ func (L *SingleLinkedList) Add(value interface{}) {
 	}
 }
 
+func (L *SingleLinkedList) InsertHead(value interface{}) {
+	newNode := &Node{
+		value: value,
+	}
+	if L.head == nil && L.last == nil {
+		L.head = newNode
+		L.last = newNode
+	} else {
+		newNode.next = L.head
+		L.head = newNode
+	}
+}
+
 func (L *SingleLinkedList) PrintAll() {
 	list := L.head
 	for list.next != nil {
