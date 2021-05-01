@@ -6,9 +6,12 @@ import (
 
 func main() {
 	linkedList := &linkedlist.SingleLinkedList{}
-	linkedList.Add(2)
-	linkedList.Add(3)
-	linkedList.Add(4)
+	linkedList.Insert(2)
+	linkedList.Insert(3)
+	linkedList.InsertAfter(3, 10)
+	linkedList.Insert(4)
 	linkedList.InsertHead(1)
+	linkedList.Remove()
+	linkedList.RemoveAfter(10)
 	linkedList.PrintAll()
 }
