@@ -6,21 +6,21 @@ import (
 )
 
 func main() {
-	var n int
-	var temp int32
+	var n, m int
+	var a, b, k int32
 
-	var a []int32
+	queries := make([][]int32, 0)
 
 	fmt.Scan(&n)
+	fmt.Scan(&m)
 
-	for i := 0; i < n; i++ {
-		fmt.Scan(&temp)
-		a = append(a, temp)
+	for i := 0; i < m; i++ {
+		fmt.Scan(&a)
+		fmt.Scan(&b)
+		fmt.Scan(&k)
+		queries = append(queries, []int32{a, b, k})
 	}
 
-	result := array.ReverseArray(a)
+	fmt.Println(array.ArrayManipulation(int32(n), queries))
 
-	for _, eachElement := range result {
-		fmt.Println(eachElement)
-	}
 }
