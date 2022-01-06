@@ -1,3 +1,5 @@
+// problem link: https://leetcode.com/problems/remove-element/
+
 package array
 
 func RemoveElement(nums []int, val int) int {

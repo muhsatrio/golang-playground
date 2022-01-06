@@ -1,3 +1,5 @@
+// problem link: https://leetcode.com/problems/rotate-list/
+
 package linkedlist
 
 func RotateRight(head *ListNode, k int) *ListNode {

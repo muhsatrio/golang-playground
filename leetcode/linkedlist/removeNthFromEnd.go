@@ -1,3 +1,5 @@
+// problem link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
 package linkedlist
 
 func RemoveNthFromEnd(head *ListNode, n int) *ListNode {
